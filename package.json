@@ -5,9 +5,10 @@
   "author": "Zlatin Stamatov",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start -p 8080",
+    "heroku-postbuild": "npm run build",
     "now-build": "npm run semantic:build && next build",
     "semantic:build": "cd .semantic && gulp build-css build-assets",
     "semantic:watch": "cd .semantic && npm run semantic:build && gulp watch",
